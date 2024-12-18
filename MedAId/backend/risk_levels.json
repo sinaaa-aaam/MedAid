@@ -1,0 +1,26 @@
+[
+    {
+        "steps": [0, 3000],
+        "sleep": [0, 4],
+        "heart_rate": [80, 120],
+        "calories": [0, 1500],
+        "risk_level": "High",
+        "advice": "Your activity is low, and health metrics indicate elevated risk. Increase your physical activity and improve sleep habits."
+    },
+    {
+        "steps": [3001, 7000],
+        "sleep": [4, 6],
+        "heart_rate": [60, 80],
+        "calories": [1501, 2500],
+        "risk_level": "Moderate",
+        "advice": "Your metrics are moderate. Focus on consistent exercise and balanced nutrition."
+    },
+    {
+        "steps": [7001, 10000],
+        "sleep": [6, 8],
+        "heart_rate": [50, 60],
+        "calories": [2501, 3500],
+        "risk_level": "Low",
+        "advice": "Great job! Maintain your current health habits."
+    }
+]

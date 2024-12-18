@@ -1,0 +1,94 @@
+/* General Container Styling */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: url("../assets/images/MedAId.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white; /* Ensure the text is readable on the background image */
+}
+
+/* Heading */
+.container h2 {
+    color: #009688;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds space between input fields */
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #009688;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #00695c; /* Darker teal when focused */
+    box-shadow: 0 0 5px rgba(0, 150, 136, 0.5);
+}
+
+/* Button Styling */
+form button {
+    padding: 12px;
+    background-color: #009688;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #00695c; /* Darker teal on hover */
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #009688;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #00695c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    form input, form button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .back-btn {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
