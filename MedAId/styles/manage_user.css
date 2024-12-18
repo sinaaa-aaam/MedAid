@@ -1,0 +1,280 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light background color */
+    color: #333; /* Dark text for readability */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url("../assets/images/MedAId.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header */
+.admin-header {
+    width: 100%;
+    padding: 20px;
+    background-color: #009688; /* Teal color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.admin-header h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.admin-header nav {
+    display: flex;
+    gap: 15px;
+}
+
+.admin-header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #00796b; /* Darker teal */
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.admin-header nav a:hover {
+    background-color: #004d40; /* Even darker teal */
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Manage Users Section */
+/* Manage Users Section - Create New User Specific Styling */
+.manage-users {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.manage-users h2 {
+    font-size: 1.8rem;
+    color: #009688; /* Teal color */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.manage-users form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Labels and Inputs Styling */
+/* Labels and Inputs Styling */
+.manage-users input[type="text"],
+.manage-users input[type="number"],
+.manage-users input[type="email"],
+.manage-users input[type="password"],
+.manage-users select {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9fc; /* Same light grey for consistency */
+    outline: none;
+    color: #333;
+    width: 100%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.manage-users input[type="text"]:focus,
+.manage-users input[type="number"]:focus,
+.manage-users input[type="email"]:focus,
+.manage-users input[type="password"]:focus,
+.manage-users select:focus {
+    border-color: #009688; /* Teal focus color */
+    box-shadow: 0 0 5px rgba(0, 150, 136, 0.5); /* Slight teal glow */
+}
+
+
+.manage-users select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23009688" d="M2 0L0 2h4z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px 10px;
+}
+
+/* Button Styling */
+.manage-users button {
+    grid-column: span 2;
+    padding: 12px 15px;
+    background-color: #009688;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.manage-users button:hover {
+    background-color: #00796b; /* Darker teal on hover */
+    transform: translateY(-2px);
+}
+
+.manage-users button:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design for Create New User Form */
+@media (max-width: 768px) {
+    .manage-users form {
+        grid-template-columns: 1fr;
+    }
+
+    .manage-users button {
+        grid-column: span 1;
+    }
+}
+
+
+/* Search Section */
+.search-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.search-section h2 {
+    font-size: 1.6rem;
+    color: #009688; /* Teal color */
+    margin-bottom: 15px;
+}
+
+.search-section form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-section input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #f9f9fc; /* Slightly lighter grey */
+    color: #333;
+    outline: none;
+    font-size: 1rem;
+}
+
+.search-section button {
+    padding: 10px 15px;
+    background-color: #009688; /* Teal color */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-section button:hover {
+    background-color: #00796b; /* Darker teal */
+}
+
+/* Search Results Section */
+.search-results {
+    margin-top: 20px;
+}
+
+.search-results h2 {
+    color: #009688; /* Teal color */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.search-results table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+.search-results th,
+.search-results td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #333; /* Dark text */
+}
+
+.search-results th {
+    background-color: #f4f4f9; /* Light grey */
+    color: #009688; /* Teal color */
+    font-weight: bold;
+}
+
+.search-results tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.search-results .highlight {
+    background-color: #e0f2f1; /* Light teal highlight */
+}
+
+/* Error Message */
+.error-message {
+    color: #d32f2f; /* Red for error */
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: #009688; /* Teal footer */
+    color: #ffffff;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .manage-users form,
+    .search-section form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .manage-users input[type="email"],
+    .search-section input[type="text"] {
+        margin-bottom: 10px;
+    }
+}
