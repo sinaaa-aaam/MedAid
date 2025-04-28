@@ -45,7 +45,7 @@ The **AI-Powered Personal Health Assistant** is a web-based application designed
 - **Frontend**: HTML, CSS, JavaScript (or React for dynamic interactivity).
 - **Backend**: PHP (CRUD operations and logic).
 - **Database**: MySQL (data storage and relationships).
-- **Machine Learning**: Lightweight models built with scikit-learn/TensorFlow/Keras.
+- **AI Logic**: Custom-built JSON models simulating machine learning predictions. Planned integration with scikit-learn/TensorFlow/Keras for future upgrades.
 - **Deployment**: XAMPP (local development) or FileZilla (live deployment).
 
 ---
